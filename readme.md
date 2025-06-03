@@ -104,7 +104,7 @@ g++ -std=c++17 -O2 -Wall -Wextra\
 
 MIT License
 
-Copyright (c) 2024 qwqAutomaton
+Copyright (c) 2025 qwq automaton
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
