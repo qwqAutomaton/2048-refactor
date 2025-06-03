@@ -48,6 +48,17 @@ namespace Game2048
                 static bool israw;
                 return israw;
             };
+#else
+            static CONSOLE_SCREEN_BUFFER_INFO &old_csbi()
+            {
+                static CONSOLE_SCREEN_BUFFER_INFO old_csbi;
+                return old_csbi;
+            };
+            static HANDLE &console_handle()
+            {
+                static HANDLE handle;
+                return handle;
+            }
 #endif
         public:
             using coord_t = int16_t;

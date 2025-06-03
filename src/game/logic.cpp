@@ -205,6 +205,7 @@ namespace Game2048
                     Console::set_style(Default, Default, Reset);
                     printf("Press any key to continue.\n");
                     Console::read_key();
+                    break;
                 case GameBoard::GameState::LOSE:
                     Console::sleep(1000);
                     Console::clear();
@@ -222,6 +223,7 @@ namespace Game2048
                     Console::set_style(Default, Default, Reset);
                     printf("Press any key to continue.\n");
                     Console::read_key();
+                    break;
                 case GameBoard::GameState::ONGOING:
                     break;
                 }
