@@ -1,6 +1,6 @@
 #pragma once
 #if __cplusplus < 201703L
-#error "This project requires C++17 or later. Please set the argument -std=c++17 or later in your compiler settings."
+#error "Template metaprogramming requires C++17 or later."
 #endif
 #include "AI.h"
 #include <string>
