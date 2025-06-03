@@ -34,6 +34,8 @@ src/                        # 源代码目录
 
 ## 构建步骤
 
+### 使用 CMake（推荐）
+
 ```bash
 # 创建构建目录
 mkdir build && cd build
@@ -46,6 +48,24 @@ make
 
 # 运行
 ./2048
+```
+
+### 手动编译
+
+```bash
+# 在项目根目录下创建输出目录
+mkdir build
+
+# 编译所有源文件（以 gnu g++ 为例）
+g++ -std=c++17 -O2 -Wall -Wextra\
+    src/main.cpp \
+    src/game/board.cpp \
+    src/game/logic.cpp \
+    src/game/AI.cpp \
+    src/ui/display.cpp \
+    src/ui/console_unix.cpp \
+    -I src \
+    -o build/2048
 ```
 
 ## AI 策略

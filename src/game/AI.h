@@ -19,7 +19,7 @@ namespace Game2048
         {
         public:
             virtual ~AIBase() = default;
-            virtual Direction next_move(GameBoard &board) = 0;
+            virtual Direction next_move([[maybe_unused]] GameBoard &board) = 0;
             virtual const char *name() const = 0;
         };
         class CornerAI : public AIBase

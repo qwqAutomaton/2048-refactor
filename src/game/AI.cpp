@@ -39,14 +39,14 @@ namespace Game2048
             }
         }
 
-        Direction SwirlAI::next_move(GameBoard &board)
+        Direction SwirlAI::next_move([[maybe_unused]] GameBoard &board)
         {
             Direction current_move = moves[step % moves.size()];
             step++;
             return current_move;
         }
 
-        Direction RandomAI::next_move(GameBoard &board)
+        Direction RandomAI::next_move([[maybe_unused]] GameBoard &board)
         {
             static const Direction moves[] = {
                 Direction::UP,
