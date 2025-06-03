@@ -56,7 +56,7 @@ make
 # 在项目根目录下创建输出目录
 mkdir build
 
-# 编译所有源文件（以 gnu g++ 为例）
+# 编译所有源文件（以 gnu g++，类 unix 系统为例）
 g++ -std=c++17 -O2 -Wall -Wextra\
     src/main.cpp \
     src/game/board.cpp \
@@ -64,6 +64,8 @@ g++ -std=c++17 -O2 -Wall -Wextra\
     src/game/AI.cpp \
     src/ui/display.cpp \
     src/ui/console_unix.cpp \
+    # 若为 windows，上一行改为：
+    # src/ui/console_windows.cpp \
     -I src \
     -o build/2048
 ```

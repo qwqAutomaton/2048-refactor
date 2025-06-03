@@ -36,12 +36,10 @@ set(HEADERS
 )
 
 if(WIN32)
-    message("Compiling on Windows")
     list(APPEND SOURCES
         ${SRC}/ui/console_windows.cpp
     )
 else()
-    message("Compiling on *nix-like OS")
     list(APPEND SOURCES
         ${SRC}/ui/console_unix.cpp
     )
