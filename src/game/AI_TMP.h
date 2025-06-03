@@ -1,4 +1,7 @@
 #pragma once
+#if __cplusplus < 201703L
+#error "This project requires C++17 or later. Please set the argument -std=c++17 or later in your compiler settings."
+#endif
 #include "AI.h"
 #include <string>
 namespace Game2048
