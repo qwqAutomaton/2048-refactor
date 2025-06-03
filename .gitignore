@@ -1,0 +1,8 @@
+old/*
+old
+.DS_Store
+.vscode/*
+.vscode
+build/*
+build
+test*
