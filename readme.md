@@ -30,44 +30,18 @@ src/                        # 源代码目录
 
 - CMake 3.10 或更高版本
 - 支持 C++17 的编译器
-- Unix-like 系统或 Windows. 仅在 macOS Sonoma (Apple M2) 上测试过。
+- 在 macOS Sonoma (Apple M2)、Windows 10、Ubuntu 22.04.4 LTS 上均测试通过。Windows 系统需要额外的编译步骤。
 
 ## 构建步骤
 
-### 使用 CMake（推荐）
+推荐 CMake 构建编译。
 
 ```bash
-# 创建构建目录
+
 mkdir build && cd build
-
-# 生成构建文件
 cmake ..
-
-# 编译
 make
-
-# 运行
 ./2048
-```
-
-### 手动编译
-
-```bash
-# 在项目根目录下创建输出目录
-mkdir build
-
-# 编译所有源文件（以 gnu g++，类 unix 系统为例）
-g++ -std=c++17 -O2 -Wall -Wextra\
-    src/main.cpp \
-    src/game/board.cpp \
-    src/game/logic.cpp \
-    src/game/AI.cpp \
-    src/ui/display.cpp \
-    src/ui/console_unix.cpp \
-    # 若为 windows，上一行改为：
-    # src/ui/console_windows.cpp \
-    -I src \
-    -o build/2048
 ```
 
 ## AI 策略
