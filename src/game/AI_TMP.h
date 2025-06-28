@@ -1,6 +1,7 @@
+// shitcode
 #pragma once
 #if __cplusplus < 201703L
-#error "Template metaprogramming requires C++17 or later."
+#error "Requires C++17 or later."
 #endif
 #include "AI.h"
 #include <string>
